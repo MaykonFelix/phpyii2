@@ -2,14 +2,14 @@
 
 namespace app\controllers;
 
-use yii\base\Controller;
+use yii\web\Controller;
 
 class HelloController extends Controller
 {
-    public function actionSaySomething()
+    public function actionSay($message = 'Hello Word')
     {
-        return $this->render('say-something', [
-
+        return $this->render('say', [
+            'message' => $message
         ]);
     }
 }

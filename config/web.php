@@ -19,10 +19,11 @@ $config = [
             'enableCookieValidation' => false
 
         ],
-        'response' => [
-            "class" => \yii\web\Response::class,
-            'format' => \yii\web\Response::FORMAT_JSON
-        ],
+        // 'response' => [
+        // "class" => \yii\web\Response::class,
+        // 'format' => \yii\web\Response::FORMAT_HTML
+        // 'format' => \yii\web\Response::FORMAT_JSON
+        // ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
@@ -67,7 +68,7 @@ if (YII_ENV_DEV) {
     $config['modules']['debug'] = [
         'class' => 'yii\debug\Module',
         // uncomment the following to add your IP if you are not connecting from localhost.
-        'allowedIPs' => ['127.0.0.1', '::1'],
+        // 'allowedIPs' => ['127.0.0.1', '::1'],
     ];
 
     $config['bootstrap'][] = 'gii';

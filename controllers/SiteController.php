@@ -61,7 +61,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return ["mensage" => "Ola Mundo"];
+        // return ["mensage" => "Ola Mundo"];
+        return $this->render('index');
     }
 
     /**
